@@ -23,3 +23,5 @@ with open ("input/connexionlog.txt", "r") as connexion, open("out/suspect.txt","
         for element in connexion_suspect:
             if ip == element:
                 print("suspect trouvé")
+
+                #test
