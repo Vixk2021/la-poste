@@ -4,10 +4,10 @@ with open ("input/connexionlog.txt", "r") as connexiontest, open("out/utilisateu
 #g = open('out\utilisateurs.txt', "w")
     for line in connexiontest:
         nom_fichier = "utilisateurs.txt"
-        nom_utilisateurs = line.split(";")[1]
-        mon_fichier.write("%s\n" % nom_utilisateurs)
+        nom_utilisateur = line.split(";")[1]
+        mon_fichier.write("%s\n" % nom_utilisateur)
         #print(mon_fichier)
-        print(nom_utilisateurs)
+        print(nom_utilisateur)
 
 #mon_fichier.close()
 #=open('Input/connexion.log','r'+)

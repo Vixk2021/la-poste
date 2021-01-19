@@ -12,16 +12,16 @@ with open (fichier_warning, "r", encoding='utf-8') as f:
 
 #Comparaison avec le fichier connexionLog pour identification des suspects. (PAS REUSSI SNIF) 
 
-with open ("input/connexionlog.txt", "r") as connexion, open("out/suspect.txt","w") as suspect:
-    connexionlog = connexion.read().splitlines()
-    #print(connexionlog, "")
-    for log in connexionlog:   
-        fichier_suspect = "suspect.txt"
-        ip = log.split(";")[0]
-        suspect.write(ip)
-        #print(ip, "Ip des connexions log")
-        for element in connexion_suspect:
-            if ip == element:
-                print("suspect trouvé")
+# with open ("input/connexionlog.txt", "r") as connexion, open("out/suspect.txt","w") as suspect:
+#     connexionlog = connexion.read().splitlines()
+#     #print(connexionlog, "")
+#     for log in connexionlog:   
+#         fichier_suspect = "suspect.txt"
+#         ip = log.split(";")[0]
+#         suspect.write(ip)
+#         #print(ip, "Ip des connexions log")
+#         for element in connexion_suspect:
+#             if ip == element:
+#                 print("suspect trouvé")
 
-                #test
+#                 #test
